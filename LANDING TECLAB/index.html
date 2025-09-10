@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Marketing Digital</title>
+    <!-- Icon Fonts-->
+    <script src="https://kit.fontawesome.com/3f2a2841d0.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container">
+            <div id="logo">
+                <a href="index.html"><img src="images/logotipo.png" alt="Logotipo"></a>
+            </div>
+            <div id="infoContacto">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                <i class="fas fa-phone" aria-hidden="true"></i> 1-234-567-8910
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <article>
+            <section>
+                <div id="intro" class="container">
+                    <div id="descripcion">
+                        <h1>Curso profesional de Marketing Digital</h1>
+                        <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, a! Quasi odit, dolorem vitae hic reprehenderit laudantium
+                        perferendis atque eveniet culpa asperiores praesentium nesciunt aliquid cumque! Id dignissimos quam iusto.</p>
+                        <p><i class="fa-solid fa-check"></i> Consequuntur illum debitis unde doloremque. Numquam culpa nemo perspiciatis quas vero totam molestias non accusamus mollitia?
+                         Animi, ex consectetur aperiam accusantium fugit id quam eos, unde quaerat, ad quas quasi.</p>
+                        <p><i class="fa-solid fa-check"></i> Adipisci eos hic, ea fugiat aliquam inventore voluptatum iure ab explicabo iusto fuga laudantium necessitatibus odio veritatis minus
+                         repellat praesentium non dolor. Delectus, necessitatibus quisquam. Consectetur iusto accusantium aperiam voluptatum.</p>
+                    </div>
+                    <div id="formulario">
+                        <h2>Solicitar información</h2>
+
+                        <form id="callToAct" action="datos.php" method="POST">
+                            <label for="suNombre">Nombre:</label>
+                            <input type="text" name="nombre" id="suNombre" required>
+                            <small class="error" id="err-nombre"></small>
+
+                            <label for="suApellido">Apellido:</label>
+                            <input type="text" name="apellido" id="suApellido" required>
+                            <small class="error" id="err-apellido"></small>
+
+                            <label for="suEmail">Email:</label>
+                            <input type="email" name="email" id="suEmail" required>
+                            <small class="error" id="err-email"></small>
+
+                            <input type="submit" value="Enviar solicitud">
+                            <div id="mensajeFormulario" aria-live="polite"></div>
+                        </form>
+                        <small>* Nunca compartiremos tu información personal con terceros. Revisa nuestra <a href="#" target="_blank" rel="noopener noreferrer">Política de privacidad</a></small>
+                    </div>
+                </div>
+            </section>
+        </article>    
+</body>
+</html>
