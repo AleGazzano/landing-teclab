@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curso de Marketing Digital</title>
+    <!-- JS -->
+    <script src="scripts/main.js" defer></script>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Icon Fonts-->
-    <script src="https://kit.fontawesome.com/3f2a2841d0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f779a796b.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -25,9 +30,9 @@
                 <a href="index.html"><img src="images/logotipo.png" alt="Logotipo"></a>
             </div>
             <div id="infoContacto">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-                <i class="fas fa-phone" aria-hidden="true"></i> 1-234-567-8910
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <i class="fa-solid fa-phone-flip"></i> <span><b>1-234-567-8910</b></span>
             </div>
         </div>
     </header>
@@ -38,33 +43,48 @@
                 <div id="intro" class="container">
                     <div id="descripcion">
                         <h1>Curso profesional de Marketing Digital</h1>
-                        <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, a! Quasi odit, dolorem vitae hic reprehenderit laudantium
-                        perferendis atque eveniet culpa asperiores praesentium nesciunt aliquid cumque! Id dignissimos quam iusto.</p>
+                        <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, a! Quasi odit, Consequuntur illum debitis unde doloremque. Numquam culpa nemo perspiciatis quas vero
+                        dolorem vitae hic reprehenderit laudantium perferendis atque eveniet culpa asperiores praesentium nesciunt aliquid cumque!
+                        Id dignissimos quam iusto.</p>
                         <p><i class="fa-solid fa-check"></i> Consequuntur illum debitis unde doloremque. Numquam culpa nemo perspiciatis quas vero totam molestias non accusamus mollitia?
-                         Animi, ex consectetur aperiam accusantium fugit id quam eos, unde quaerat, ad quas quasi.</p>
+                         Animi, ex consectetur aperiam accusantium fugit id quam eos, unde quaerat, ad quas quasi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p><i class="fa-solid fa-check"></i> Adipisci eos hic, ea fugiat aliquam inventore voluptatum iure ab explicabo iusto fuga laudantium necessitatibus odio veritatis minus
                          repellat praesentium non dolor. Delectus, necessitatibus quisquam. Consectetur iusto accusantium aperiam voluptatum.</p>
+                        <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio quos facere autem beatae veniam illo porro culpa amet libero. Animi, ex consectetur aperiam accusantium fugit id quam eos, unde quaerat, ad quas quasi.
+                        Magni eveniet amet in deleniti saepe? Excepturi quasi error sed ipsam.</p>
                     </div>
                     <div id="formulario">
                         <h2>Solicitar información</h2>
 
                         <form id="callToAct" action="datos.php" method="POST">
-                            <label for="suNombre">Nombre:</label>
-                            <input type="text" name="nombre" id="suNombre" required>
-                            <small class="error" id="err-nombre"></small>
+                        <label for="suNombre">Nombre:</label>
+                        <input type="text" name="nombre" id="suNombre" required>
+                        <small class="error" id="err-nombre"></small>
 
-                            <label for="suApellido">Apellido:</label>
-                            <input type="text" name="apellido" id="suApellido" required>
-                            <small class="error" id="err-apellido"></small>
+                        <label for="suApellido">Apellido:</label>
+                        <input type="text" name="apellido" id="suApellido" required>
+                        <small class="error" id="err-apellido"></small>
 
-                            <label for="suEmail">Email:</label>
-                            <input type="email" name="email" id="suEmail" required>
-                            <small class="error" id="err-email"></small>
+                        <label for="suEmail">Email:</label>
+                        <input type="email" name="email" id="suEmail" required>
+                        <small class="error" id="err-email"></small>
 
-                            <input type="submit" value="Enviar solicitud">
-                            <div id="mensajeFormulario" aria-live="polite"></div>
+                        <!-- ✅ Checkbox de aceptación -->
+                        <label class="aceptar-terminos">
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                        Acepto los <a href="#" target="_blank" rel="noopener noreferrer">términos y condiciones</a>
+                        </label>
+
+                        <input type="submit" value="Enviar solicitud">
+                        <div id="mensajeFormulario" aria-live="polite"></div>
                         </form>
-                        <small>* Nunca compartiremos tu información personal con terceros. Revisa nuestra <a href="#" target="_blank" rel="noopener noreferrer">Política de privacidad</a></small>
+
+                        <small>
+                        * Nunca compartiremos tu información personal con terceros. 
+                        Revisa nuestra <a href="#" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+                        </small>
                     </div>
                 </div>
             </section>
@@ -89,23 +109,92 @@
                     </div>   
                 </div>
             </section>
-            <section>
-                <div id="seccionTres" class="container"></div>
-                <div>
-                    <h2>Domina las herramientas para implementar campañas efectivas de Marketing Digital</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi quas,
-                     quae deserunt reiciendis totam nobis tempora quaerat accusamus.
-                     Veniam aut unde est fuga officia nemo laborum aliquam sit tenetur!</p>
 
-                     <a href="#" id="descargaTemario">Descargar temario</a>
+            <section>
+                <div id="seccionTres" class="container">
+                    <div>
+                        <h2>Domina las herramientas para implementar campañas efectivas de Marketing Digital</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi quas,
+                         quae deserunt reiciendis totam nobis tempora quaerat accusamus.Magni eveniet amet in deleniti saepe? Excepturi quasi error sed ipsam.
+                         Consequuntur illum debitis unde doloremque. Numquam culpa nemo perspiciatis quas vero totam molestias non accusamus mollitia?
+                         Veniam aut unde est fuga officia nemo laborum aliquam sit tenetur!quae deserunt reiciendis totam nobis tempora quaerat accusamus.
+                         Consequuntur illum debitis unde doloremque.</p>
+
+                        <a href="#" id="descargaTemario">
+                        <i class="fa-solid fa-download"></i> Descargar temario
+                        </a>
+                    </div>
+                    <video controls>
+                        <source src="marketing.mp4" type="video/mp4">
+                        <source src="marketing.ogg" type="video/ogg">
+                        <source src="marketing.webm" type="video/webm">
+                        <p>Su navegador no soporta este formato de video</p>
+                    </video>
                 </div>
-                <video controls>
-                    <source src="marketing.mp4" type="video/mp4">
-                    <source src="marketing.ogg" type="video/ogg">
-                    <source src="marketing.webm" type="video/webm">
-                    <p>Su navegador no soporta este formato de video</p>
-                </video>
             </section>
             
+            <section>
+                <h2>Conoce nuestro staff de instructores</h2>
+                
+                <div id="seccionCuatro" class="container">
+                    <div class="card">
+                        <img src="images/profile1.jpeg" alt="Imagen del rostro del docente">
+                        <h3>Ned S.</h3>
+                        <p>Consultor de Marketing Digital</p>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
+                    </div>
+                    <div class="card">
+                        <img src="images/profile2.jpeg" alt="Imagen del rostro del docente">
+                        <h3>Joan W.</h3>
+                        <p>Paid Search Specialist </p>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
+                    </div>
+                    <div class="card">
+                        <img src="images/profile3.jpeg" alt="Imagen del rostro del docente">
+                        <h3>Carrie M.</h3>
+                        <p>Directora de E-Commerce</p>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
+                    </div>
+                    <div class="card">
+                        <img src="images/profile4.jpeg" alt="Imagen del rostro del docente">
+                        <h3>Rick G.</h3>
+                        <p>Consultor de Social Media</p>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="seccionCinco" class="container">
+                    <h2>¿Deseas más información?</h2>
+                    <p>Rellena nuestro formulario de solicitud de información y
+                        nos pondremos en contacto contigo.</p>
+                    <a href="#callToAct" id="solicitarInfo">¡Solicitar información ahora!</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div id="pieDePagina" class="container">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <div class="copyright">
+                <small>&copy; Derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,16 @@
+/* ESTILOS GENERALES */
+html, body {
+   height: 100%;
+}
+/* Modificar cajas de CSS */
+html {
+   box-sizing: border-box
+}
+*, *::before, *::after {
+   box-sizing: inherit
+}
+/* Resteo de margenes y padding */
+* {
+   margin: 0;
+   padding: 0;
+}
