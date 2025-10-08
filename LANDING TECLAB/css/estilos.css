@@ -1,16 +1,22 @@
-/* ESTILOS GENERALES */
-html, body {
-   height: 100%;
+/* ========== ESTILOS GENERALES ========== */
+html, body { height: 100%; }
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+* { margin: 0; padding: 0; }
+
+body { font-family: "Open Sans", sans-serif; }
+
+.container {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
-/* Modificar cajas de CSS */
-html {
-   box-sizing: border-box
+
+:focus-visible {
+  outline: 3px solid rgba(19,163,219,.55);
+  outline-offset: 2px;
 }
-*, *::before, *::after {
-   box-sizing: inherit
-}
-/* Resteo de margenes y padding */
-* {
-   margin: 0;
-   padding: 0;
-}
+
+
