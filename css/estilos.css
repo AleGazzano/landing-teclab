@@ -268,3 +268,113 @@ article > section:nth-child(4) { padding: 60px 0 0; text-align: center; }
   flex-wrap: wrap;
   margin: 50px auto;
 }
+
+.card {
+  margin: 20px 0.5em;
+  flex: 1 1 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px #ccc9c9;
+  padding-bottom: 35px;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.12);
+}
+
+.card img { width: 100%; display: block; margin-bottom: 20px; height: auto; }
+.card p { font-size: 0.9rem; padding: 12px 2em; line-height: 1.5; }
+.card i { font-size: 1.5rem; color: #107ba7; margin: 0 0.2em; }
+
+
+article > section:nth-child(5) {
+  background-image:
+  linear-gradient(to left top, rgba(16,123,167,0.80), rgba(16,123,167,0.80)),
+  url(../images/fondo_inferior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  padding: 100px 0; 
+}
+
+#seccionCinco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  min-height: 330px;
+  color: #fff;
+  width: 90%;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+#seccionCinco h2 {
+  margin-bottom: 0;
+}
+
+#seccionCinco p {
+  padding: 10px 0 20px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+
+#seccionCinco a {
+  display: inline-block;
+  background-color: #008000;      
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 2.5em;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.12);
+  transition: background-color .3s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+#seccionCinco a:hover {
+  background-color: #006600;       
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+#seccionCinco a:focus-visible {
+  outline: 3px solid rgba(255,255,255,.75);
+  outline-offset: 2px;
+}
+
+
+#seccionCinco a.is-loading,
+#seccionCinco a[aria-busy="true"] {
+  pointer-events: none;
+  opacity: .8;
+}
+
+
+footer { background-color: #2c2a2a; padding: 20px 0; }
+
+
+#pieDePagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  overflow: hidden; 
+}
+
+.nav { display: flex; gap: 1.5em;}
+.nav li { display: inline; font-size: 0.9rem; padding: 12px 0 0; }
+.nav li a { color: #c0bcbc; text-decoration: none; padding-right: 0; }
+.nav li a:hover { text-decoration: underline; }
+
+.copyright {
+  color: #c0bcbc;
+  padding-top: 8px;
+}
+
+.nav, .copyright { float: none !important; }
