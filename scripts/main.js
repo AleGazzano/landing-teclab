@@ -180,7 +180,7 @@ if (btnSolicitar) {
   btn.setAttribute('title', 'Volver arriba');
   btn.textContent = '↑';
 
-  Object.assign(btn.style, {
+Object.assign(btn.style, {
     position: 'fixed',
     right: '18px',
     bottom: '18px',
@@ -191,17 +191,18 @@ if (btnSolicitar) {
     border: 'none',
     cursor: 'pointer',
     fontSize: '18px',
-    backgroundColor: '#008000',
+    backgroundColor: '#13a3db',   // ✔ nuevo color celeste
     color: '#fff',
     boxShadow: '0 6px 14px rgba(0,0,0,0.15)',
     opacity: '0',
     pointerEvents: 'none',
     transform: 'translateY(6px)',
     transition: 'opacity .2s ease, transform .2s ease'
-  });
+});
 
-  btn.onmouseenter = () => (btn.style.backgroundColor = '#006600');
-  btn.onmouseleave = () => (btn.style.backgroundColor = '#008000');
+// Hover celeste más oscuro
+btn.onmouseenter = () => (btn.style.backgroundColor = '#0d7fab');
+btn.onmouseleave = () => (btn.style.backgroundColor = '#13a3db');
   btn.onclick = () => {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
